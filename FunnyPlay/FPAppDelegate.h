@@ -9,19 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FPRootViewController.h"
 
-@protocol MyProtocol <NSObject>
-
-@property(nonatomic,strong) NSString* str;
-@optional
-
--(void)func1;
-
-@end
-
-
-
-
-@interface FPAppDelegate : UIResponder <UIApplicationDelegate,MyProtocol>
+@interface FPAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) FPRootViewController *fpRootController;

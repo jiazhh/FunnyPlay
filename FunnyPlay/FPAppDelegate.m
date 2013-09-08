@@ -14,13 +14,8 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
--(void)func1{
-    
-}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.str = @"11";
-    NSLog(@"%@",self.str);
     //[self letusPlay];
     FPMainViewController* mainCtrler = [[FPMainViewController alloc]initWithNibName:nil bundle:nil];
     mainCtrler.title = @"首页";
